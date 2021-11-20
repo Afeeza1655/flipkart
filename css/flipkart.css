@@ -1,0 +1,320 @@
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+body{
+    background-color: #efefef;
+}
+#headerBlock{
+    background: #2874f0;
+    height:56px;
+}
+#headerBlock article{
+    width:80%;
+    height:56px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.leftBlock{
+    flex-basis: 50%;
+    display: flex;
+    justify-content: flex-start;
+}
+.rightBlock{
+    flex-basis: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+.logoBlock img{
+    width:75px;
+}
+.exploreBlock img{
+    width:9px;
+}
+.logoBlock a{
+    text-decoration: none;
+    font-style: italic;
+    font-size: 13px;
+}
+.exploreBlock span:nth-child(1){
+    color: #fff;
+}
+.exploreBlock span:nth-child(2){
+    color:#ffe500;
+    margin-right:2px;
+    font-weight: bold;
+}
+.exploreBlock{
+    margin-top: -6px;
+}
+.searchIcon{
+    position: relative;
+    display: flex;
+}
+.searchBlock{
+    flex-basis: 80%;
+    display: flex;
+    justify-content: flex-end ;
+}
+.searchBlock input{
+width:98%
+}
+ .searchIcon{
+    position: relative;
+}
+.searchIcon i{
+    position:absolute;
+    left: -29px;
+    top:10px;
+}
+.rightBlock ul {
+display:none;
+list-style: none;
+
+}
+.rightBlock ul li a {
+    display:flex;
+    text-decoration: none;
+    padding: 7px 45px;
+    display: inline-block;
+    color: white;
+    }
+    .rightBlock .loginBlock a:nth-child(1){
+      background-color: #fff;
+      flex-basis: 50%;
+      display: flex;
+      color: blue;
+    }
+    .images {
+        display:flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      
+    }
+    .images a{
+        text-decoration: none; 
+        text-align: center;
+    }
+.sec3imgs img{
+    width:100%;
+}
+/* .sec4Left {
+    flex-basis: 90%;
+    display: flex; 
+    justify-content: flex-start; 
+    
+}
+.sec4Right{
+    flex-basis: 50%;
+    display: flex;
+    justify-content: flex-end;
+    background: blue;
+    padding: 15px 10px;
+    display: inline-block;
+    color: white;
+    align-items: flex-start;
+}
+.sec4{
+    display: flex;
+    width: 100%;
+    padding:5px 10px ;
+    background:#fff ;
+} */
+.sec4{
+  background: #fff;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.sec4Right {
+    background: blue;
+    color: white;
+    padding:10px;
+    margin-right: 10px;
+}
+.sec5imgs img{
+    display:flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+}
+.sec5imgs a{
+    
+        text-decoration: none; 
+        text-align: center;
+    
+}
+.sec5imgs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+/* .sec6Left {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: flex-start;
+}
+.sec6Right{
+    flex-basis: 50%;
+    display: flex;
+    justify-content: flex-end;
+    background: blue;
+    padding: 15px 10px;
+    display: inline-block;
+    color: white;
+    align-items: flex-start;
+}
+.sec6{
+    display: flex;
+
+    padding:5px 10px ;
+} */
+.sec6{
+    background: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .sec6Right {
+      background: blue;
+      color: white;
+      padding:10px;
+      margin-right: 10px;
+  
+  }
+.sec7imgs a{
+    text-decoration: none;
+    text-align: center;
+}
+.sec7imgs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.rightBlock nav>ul{
+    display:flex;
+    list-style: none;
+}
+.rightBlock nav>ul>li{
+    margin:0 20px;
+    position :relative;
+}
+.rightBlock nav>ul>li>a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: capitalize;
+}
+.dropdown{
+    position: absolute;
+    background-color: #fff;
+    width:200px;
+    list-style: none;
+    top:50px;
+    left:-0px;
+    flex-direction: column;
+    display:none;
+}
+.dropdown li a{
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+    border-bottom: 1px solid #efefef;
+    display:block;
+}
+.rightBlock nav ul li:hover>ul{
+    display: block;
+    z-index: 3;
+}
+.triangle{
+    border-bottom:12px solid white;
+    width:0;
+    height:0;
+    border-left:12px solid transparent;
+    border-right:12px solid transparent;
+    position:absolute;
+    top:-12px;
+}
+/* Mega Menu css starts here */
+#megamenuBlock{
+    width:100%;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    height:45px;
+    
+}
+#megamenuBlock article{
+    width: 80%;
+    margin: 0 auto;
+
+}
+#megamenuBlock >article>nav>ul{
+    display:flex;
+    height:45px;
+    list-style: none;
+    align-items: center;
+    justify-content: flex-start;
+}
+#megamenuBlock>article>nav>ul>li{
+    flex:1;
+  position:  relative;
+  padding:10px 0;
+}
+#megamenuBlock >article>nav>ul>li>a{
+    color: #111;
+    text-decoration: none;
+    font-size:14px;
+    text-transform: capitalize;
+}
+.megamenuContainer{
+    width:1200px;
+    height:75vh;
+    background: #fff;
+    position:absolute;
+    top:32px;
+    display:none;
+    border-bottom: 2px solid #ccc;
+    right: 50px;
+}
+.innerMenu{
+    flex-basis: 25%;
+    padding:20px;
+
+}
+.innerMenu:nth-child(odd){
+    background: #fff;
+}
+.innerMenu:nth-child(even){
+    background: #ccc;
+}
+
+.innerMenu ul{
+    display:flex;
+    flex-direction:column;
+    list-style: none;
+}
+.innerMenu ul li a{
+    color:#222;
+    text-decoration:none;
+    padding:10px;
+    display: block;
+    font-size: 14px;
+    text-transform: capitalize;
+    right: 100%;
+}
+.innerMenu ul li :nth-child(1) a{
+    font-weight:bold;
+    color:#111;
+
+}
+#megamenuBlock > article>nav>ul>li:hover>.megamenuContainer{
+    display: flex;
+}
+
+
+
+
+
+
